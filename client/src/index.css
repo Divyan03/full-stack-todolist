@@ -1,0 +1,158 @@
+*{
+  color: #8be9fd;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body {
+  background-color:#282a36;
+}
+
+h1 {
+  text-align: center;
+  color:#ff79c6;
+  padding: 10px;
+  font-size: 70px;
+}
+
+.obj{
+  margin: 0 auto;
+  background-color: lightslategray;
+  position: relative;
+  padding: 16px;
+  border-radius: 16px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 16px;
+}
+
+.obj:hover{
+  background-color: aliceblue;
+}
+
+.text{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.obj .delete{
+  color: black;
+  position: absolute;
+  font-weight: bold;
+  right: 25px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  line-height: 10px;
+  text-align: center;
+  background-color: #8be9fd;
+  border-radius: 99%;
+  transition: 0.2s;
+}
+
+.delete:hover{
+  color: white;
+  background-color: #ff5555;
+}
+
+.add-button{
+  position: fixed;
+  display: flex;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  line-height: 25px;
+  font-size: 25px;
+  padding: 8px;
+  text-align: center;
+  justify-content: center;
+  background-color: mediumseagreen;
+  border-radius: 99%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: .5s;
+}
+.add-button:hover{
+  background-color: limegreen;
+}
+
+.popUp{
+  position: absolute;
+  text-align: center;
+  background: white;
+  border: solid 2px black;
+  width: 400px;
+  height: 200px;
+  top: 50%; /* Move the element down by 50% of its containing element's height */
+  left: 50%; /* Move the element right by 50% of its containing element's width */
+  transform: translate(-50%, -50%); /* Center the element both horizontally and vertically */
+  border-radius: 16px;
+}
+
+.popUp h3{
+  color:black;
+  background-color: cornflowerblue;
+  padding: 8px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+input {
+  width: 200px; /* Set the width to 200 pixels */
+  height: 40px; /* Set the height to 40 pixels */
+  font-size: 1.2em;
+  color: black;
+  border: solid 2px black;
+  margin:15px;
+}
+
+
+.close{
+  position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  right: 5px;
+  top: 5px;
+  border-radius: 99%;
+  background-color: hidden;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  text-align: center;
+  line-height: 8px;
+  transition: 0.3s;
+  
+}
+
+.close:hover{
+  color: white;
+  background-color: rgba(120, 120,120, .5)
+}
+
+.button{
+  display: inline-block;
+  border-radius: 10px;
+  width: 200px;
+  color: black;
+  border: solid 2px black;
+  font-weight: bold;
+  margin: 10px 10px;
+  padding: 8px;
+  background-color: limegreen;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover{
+  background-color: #50fa7b;
+}

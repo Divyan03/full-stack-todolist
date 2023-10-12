@@ -1,0 +1,13 @@
+GET http://localhost:3001/getObj
+
+###
+
+POST http://localhost:3001/obj/new
+Content-Type: application/json
+
+{   
+    "text": "hi"
+}
+
+###
+DELETE http://localhost:3001/obj/delete/652720829f0b5a41b2379771
